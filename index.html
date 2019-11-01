@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="assets/css/main.css" type="text/css">-->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_PQJEWwGrqhbhmG7EAXsX7");
+        })();
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12" id="map" style="height:200px">
+        </div>
+    </div>
+    
+<br>
+<br>
+<br>
+<!--email 1 and 2-->
+<button id="emailEntry">Click here!</button>
+<button id="subscriberButton">Join here!</button> 
+
+
+<!--parameters email with inputs for user-->
+<input type="text" value="" placeholder="email" id="email_address">
+<input type="text" value="" placeholder="message" id= "message_me">
+
+<!--email 4 and 5-->
+<button id="email_Button">subscribe!</button>
+<input type="text" value="" placeholder="email" id="subscriber_address">
+<input type="text" value="" placeholder="message" id="subscriber_message">
+<!--<input type="text" value="" placeholder="message" id="predefined _message">-->
+
+
+    <!--<input id="city" type="text" name="" placeholder="City Name"/>-->
+    <!--<button id="myButton"> Click Now!</button>-->
+    <!--<div id="myDiv"><p id="temp"></p></div>-->
+    <!--<script type="text/javascript" src="assets/js/main.js"></script>-->
+
+<script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+                disableDefaultUI: true
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5nh3Vx7zeobGOL3FU8d78QWXSqe8gC-Y&callback=initMap" async defer></script>
+    
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
